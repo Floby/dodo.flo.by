@@ -1,0 +1,3 @@
+# Redirect default Netlify subdomain to primary domain
+http://admiring-austin-9b9938.netlify.com/* http://dodo.flo.by/:splat 301!
+http://dodo.flo.by/* https://dodo.flo.by/:splat 301!
