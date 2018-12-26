@@ -1,4 +1,4 @@
-form.dump {
+.dump {
   display: flex;
   flex-direction: row;
   align-items: baseline;
@@ -13,5 +13,11 @@ form.dump {
     &:extend(.round-action-button);
     margin-left: 1em;
     flex-shrink: 0;
+  }
+}
+
+.no-dump-preview {
+  .dump.preview {
+    display: none
   }
 }
