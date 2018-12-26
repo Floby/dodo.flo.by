@@ -1,0 +1,17 @@
+form.dump {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+
+  .note-input {
+    &:extend(.text-input);
+    font-size: 120%;
+  }
+
+  input[type=submit] {
+    &:extend(.round-action-button);
+    margin-left: 1em;
+    flex-shrink: 0;
+  }
+}

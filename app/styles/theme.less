@@ -1,0 +1,40 @@
+.regular-box-shadow () {
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.text-input {
+  .regular-box-shadow();
+  display: inline-block;
+  margin-top: 0.5em;
+  padding: 0.5em 0.5em;
+  width: calc(100% - 1em);
+  border: 1px solid @lightPrimaryColor;
+  border: none;
+  font-family: inherit; 
+  color: inherit;
+}
+
+.action-button {
+  background: @primaryColor;
+  color: @textOnPrimaryColor;
+  border: none;
+  text-transform: uppercase;
+  padding: 0.5em 1em;
+}
+
+.round-action-button {
+  .regular-box-shadow();
+  font-weight: bold;
+  border-radius: 50%;
+  background: @secondaryColor;
+  color: @textOnSecondaryColor;
+  border: none;
+  font-size: 120%;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+}
+
+body {
+  background: #EEEEEE;
+}

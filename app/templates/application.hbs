@@ -1,6 +1,12 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-<h1>Hello World!</h1>
+<header>
+  <h1>Dump</h1>
+</header>
+
+<main>
+  <form action="" class="dump">
+    {{textarea class="note-input" placeholder="De quoi se souvenir ?" autoresize=true}}
+    <input type="submit" name="submit" value="+"/>
+  </form>
+</main>
 
 {{outlet}}
