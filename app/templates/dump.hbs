@@ -1,8 +1,12 @@
-{{#auto-focus tagName="form" class="dump"}}
-  {{textarea
-    class="note-input"
-    placeholder="De quoi se rappeler ?"
-    autoresize=true
-  }}
-  <input type="submit" name="submit" value="+">
-{{/auto-focus}}
+<form {{action "createNote" title on="submit"}} >
+  {{#auto-focus class="dump"}}
+    {{textarea
+      value=title
+      key-press=(action "enterActive")
+      class="note-input"
+      placeholder="De quoi se rappeler ?"
+      autoresize=true
+    }}
+    <input type="submit" name="submit" value="+">
+  {{/auto-focus}}
+</form>
